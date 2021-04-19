@@ -33,7 +33,8 @@ function App() {
     return (
         <div className="App">
             <wired-card  fill="aliceblue" elevation="5">
-            <h1>My To Do List</h1>
+
+            <h1>To Do List</h1>
 
             <AddTodo
                 handleChanges={handleChanges}
@@ -41,7 +42,7 @@ function App() {
                 currentTodo={currentTodo}
                 clearCompleted={clearCompleted}
             />
-
+                <wired-divider/>
             <TodoList  todos={state} toggleTask={toggleTask} />
             </wired-card>
         </div>
