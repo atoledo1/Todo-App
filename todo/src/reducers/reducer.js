@@ -1,64 +1,40 @@
-export const initialTodoList = {
-  todos: [
-    {
-      task: "Clean Room",
-      completed: false,
-      id: 1000000000,
-    },
-    {
-      task: "Do Laundry",
-      completed: false,
-      id: 2000000000,
-    },
-    {
-      task: "Walk dog",
-      completed: true,
-      id: 3000000000,
-    },
-    {
-      task: "Dust books",
-      completed: false,
-      id: 4000000000,
-    },
-    {
-      task: "Cook dinner",
-      completed: false,
-      id: 5000000000,
-    },
-  ],
-};
+export const initialState = [
+  {
+    item: 'Do code challenge',
+    completed: false,
+    id: 13487829,
+  },
+  {
+    item: 'Read book',
+    completed: false,
+    id: 28578347,
+  },
+];
 
-export const todoReducer = (state, action) => {
+export const reducer = (state, action) => {
   switch (action.type) {
-    case "ADD_TODO":
-      return {
+    case 'ADD_TODO':
+      return [
         ...state,
-        todos: [
-          ...state.todos,
-          {
-            task: action.payload,
-            completed: false,
-            id: state.todos.length + 1,
-          },
-        ],
-      };
-    case "TOGGLE_COMPLETED":
-      console.log(action, state.todos);
-      return {
-        ...state,
-        todos: [
-          ...state.todos.map((todo) =>
-            todo.task === action.payload
-              ? { ...todo, completed: !todo.completed }
-              : todo
-          ),
-        ],
-      };
-    case "CLEAR_COMPLETED":
-      return {
-        ...state,
-        todos: [...state.todos.filter((task) => task.completed !== true)],
-      };
+        {
+          item: action.payload,
+          completed: false,
+          id: Date.now(),
+        },
+      ];
+    case 'TOGGLE_COMPLETED':
+      return state.map((item) => {
+        if (item.id === action.payload) {
+          return {
+            ...item,
+            completed: !item.completed,
+          };
+        } else {
+          return item;
+        }
+      });
+    case 'CLEAR_COMPLETED':
+      return state.filter((item) => !item.completed);
     default:
       return state;
   }

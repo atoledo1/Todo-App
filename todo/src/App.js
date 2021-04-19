@@ -1,24 +1,51 @@
-import React, { useReducer } from "react";
-import "./App.css";
-import TodoList from "./components/TodoList";
-import TodoForm from "./components/TodoForm";
+import React, { useState, useReducer } from 'react';
+import './App.css';
+import { initialState, reducer } from './reducers/reducer.js';
+import AddTodo from './components/TodoForm';
+import TodoList from './components/TodoList';
+import "wired-elements";
 
-import { todoReducer, initialTodoList } from "./reducers/reducer";
+function App() {
+    const [currentTodo, setCurrentTodo] = useState('');
+    const [state, dispatch] = useReducer(reducer, initialState);
 
-const App = () => {
-  const [state, dispatch] = useReducer(todoReducer, initialTodoList);
+    const handleChanges = (evt) => {
+        setCurrentTodo(evt.target.value);
+    };
 
-  return (
-    <div className="App">
-      <h1>To-do List</h1>
-      <div>
-        <TodoForm dispatch={dispatch} />
-      </div>
-      <div>
-        <TodoList todos={state.todos} dispatch={dispatch} />
-      </div>
-    </div>
-  );
-};
+    const handleSubmit = (evt) => {
+        evt.preventDefault();
+        dispatch({ type: 'ADD_TODO', payload: currentTodo });
+        setCurrentTodo('');
+    };
+
+    const toggleTask = (todoId) => {
+        dispatch({ type: 'TOGGLE_COMPLETED', payload: todoId });
+    };
+
+    const clearCompleted = (evt) => {
+        evt.preventDefault();
+        dispatch({ type: 'CLEAR_COMPLETED' });
+    };
+
+    console.log('app', state);
+
+    return (
+        <div className="App">
+            <wired-card  fill="aliceblue" elevation="5">
+            <h1>My To Do List</h1>
+
+            <AddTodo
+                handleChanges={handleChanges}
+                handleSubmit={handleSubmit}
+                currentTodo={currentTodo}
+                clearCompleted={clearCompleted}
+            />
+
+            <TodoList  todos={state} toggleTask={toggleTask} />
+            </wired-card>
+        </div>
+    );
+}
 
 export default App;

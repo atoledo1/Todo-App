@@ -1,32 +1,18 @@
-import React, { useState } from "react";
-import "wired-elements";
+import React from 'react';
 
-const TodoForm = (props) => {
-  const [newTaskName, setNewTaskName] = useState();
+import "wired-elements"
 
-  const handleChanges = (e) => {
-    setNewTaskName(e.target.value);
-  };
-
-  return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        props.dispatch({ type: "ADD_TODO", payload: newTaskName });
-        setNewTaskName("");
-      }}
-    >
-      <input
-        onChange={handleChanges}
-        type="text"
-        name="newTaskName"
-        value={newTaskName}
-      />
-      <button>Add Task</button>
-      <button onClick={() => props.dispatch({ type: "CLEAR_COMPLETED" })}>
-        Clear Completed
-      </button>
-    </form>
-  );
-};
-export default TodoForm;
+export default function AddTodo(props) {
+    return (
+        <div className="add-todo">
+            <input
+    type="text"
+    name="currentTodo"
+    value={props.currentTodo}
+    onChange={props.handleChanges}
+    />
+            <wired-button onClick={props.handleSubmit}>Add Item</wired-button>
+            <wired-button onClick={props.clearCompleted}>Clear Completed</wired-button>
+        </div>
+    );
+}

@@ -1,45 +1,72 @@
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+* {
+  margin: 0;
+
+  font: inherit;
+  font-family:  'Cabin Sketch', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-size: 62.5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .App {
-  background-color: skyblue;
-  width: 55%;
+  width: 100%;
+  height: 100%;
   text-align: center;
+
+
 }
 
-.task.completed {
-  background-color: lightseagreen;
+.completed {
   text-decoration: line-through;
+  color: #0048ff;
+}
+
+h1 {
+  font-size: 3rem;
+  /*position: relative;*/
+  /*text-align: center;*/
+
+
+}
+
+
+
+li {
+  font-size: 1.3rem;
+  /*margin: -0.37rem;*/
+}
+
+.add-todo {
+
+  margin-top:40px ;
+}
+
+button {
+  font-size: 0.8rem;
+  padding: 3px 5px;
+
+}
+
+input {
+  font-size: 0.8rem;
+  padding: 3px;
+}
+.lista{
+  margin-top: 20px;
   text-align: center;
+  list-style-position: inside;
+}
+ wired-card {
+   max-width:400px ;
+   padding: 20px;
+   text-align: center;
+   font-size: 16px;
+   line-height: 1.8;
+   margin-top: 150px;
+
+
 }

@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-rough-notation": "^1.0.1",
     "react-scripts": "3.4.1",
     "wired-elements": "^2.1.2"
   },

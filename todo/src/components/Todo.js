@@ -1,19 +1,15 @@
-import React from "react";
+import React from 'react';
 
-const Todo = (props) => {
-  return (
-    <div
-      className={`task${props.completed ? " completed" : ""}`}
-      onClick={(e) => {
-        props.dispatch({
-          type: "TOGGLE_COMPLETED",
-          payload: e.target.textContent,
-        });
-      }}
+export default function Todo(props) {
+    const { item, id, completed } = props.todo;
+    return (
+<div>
+        <wired-checkbox
+    onClick={() => props.toggleTask(id)}
+    className={`${completed ? 'completed' : ''}`}
     >
-      <p>{props.task}</p>
-    </div>
-  );
-};
-
-export default Todo;
+            <li>{item}</li>
+       </wired-checkbox>
+</div>
+    );
+}
