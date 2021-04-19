@@ -89,16 +89,15 @@ input {
   color: #203b47;
 
   appearance: none;
-  background-color:aliceblue;
-border-color: black;
+  background-color: aliceblue;
+  border-color: black;
   border-width: 2px;
-
-
-
 }
 
-:focus-visible {
-  outline: none;
+input:focus{
+  outline-color: black;
+  outline-style: dashed;
+  outline-width: thin;
 }
 wired-checkbox{
   color:#203b47;
