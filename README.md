@@ -1,3 +1,3 @@
 # reducer-todo
 
-Simple Todo React App styled with wired-componets library.
+Simple Todo React App styled with wired-components library.
