@@ -1,11 +1,11 @@
 export const initialState = [
   {
-    item: 'Do code challenge',
+    item: "Do code challenge",
     completed: false,
     id: 13487829,
   },
   {
-    item: 'Read book',
+    item: "Read book",
     completed: false,
     id: 28578347,
   },
@@ -13,7 +13,7 @@ export const initialState = [
 
 export const reducer = (state, action) => {
   switch (action.type) {
-    case 'ADD_TODO':
+    case "ADD_TODO":
       return [
         ...state,
         {
@@ -22,7 +22,7 @@ export const reducer = (state, action) => {
           id: Date.now(),
         },
       ];
-    case 'TOGGLE_COMPLETED':
+    case "TOGGLE_COMPLETED":
       return state.map((item) => {
         if (item.id === action.payload) {
           return {
@@ -33,7 +33,7 @@ export const reducer = (state, action) => {
           return item;
         }
       });
-    case 'CLEAR_COMPLETED':
+    case "CLEAR_COMPLETED":
       return state.filter((item) => !item.completed);
     default:
       return state;
