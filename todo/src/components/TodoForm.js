@@ -1,21 +1,23 @@
 import React from 'react';
 import "../App.css";
-import "wired-elements";
+import { WiredInput, WiredButton } from 'react-wired-elements';
+
 
 export default function AddTodo(props) {
     return (
         <div className="add-todo">
 
-            <input className="borde"
+            <WiredInput className="borde"
     type="text"
     name="currentTodo"
     value={props.currentTodo}
     onChange={props.handleChanges}
+                        placeholder="New Task"
     />
 
 
-            <wired-button onClick={props.handleSubmit}>Add Item</wired-button>
-            <wired-button onClick={props.clearCompleted}>Clear Completed</wired-button>
+            <WiredButton onClick={props.handleSubmit}>Add Item</WiredButton>
+            <WiredButton onClick={props.clearCompleted}>Clear Completed</WiredButton>
         </div>
     );
 }

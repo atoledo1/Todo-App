@@ -26,10 +26,10 @@ body {
 
 }
 
-.completed {
-  text-decoration: line-through;
-  color: #0048ff;
-}
+/*.completed {*/
+/*  text-decoration: line-through;*/
+/*  color: #0048ff;*/
+/*}*/
 
 h1 {
   font-size: 3rem;
@@ -43,8 +43,9 @@ h1 {
 
 
 li {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   /*margin: -0.37rem;*/
+  text-align: left;
 }
 
 .add-todo {
@@ -54,51 +55,38 @@ li {
 
 button {
   font-size: 0.8rem;
-  padding: 3px 5px;
+
 
 }
 
 input {
   font-size: 1rem;
-  padding: 1px;
+
+
+
 }
 .lista{
   margin-top: 20px;
-  text-align: center;
+
   list-style-position: inside;
+
 }
  wired-card {
    max-width:500px ;
    padding: 20px;
    text-align: center;
-   font-size: 16px;
+   font-size: 20px;
    line-height: 1.8;
    margin-top: 100px;
 
 
 
 }
- .borde{
-   border-width: 3px;
-   border-style: double;
- }
 
-input {
+ol {
+  
+  
 
-
-  color: #203b47;
-
-  appearance: none;
-  background-color: aliceblue;
-  border-color: black;
-  border-width: 2px;
-}
-
-input:focus{
-  outline-color: black;
-  outline-style: dashed;
-  outline-width: thin;
-}
-wired-checkbox{
-  color:#203b47;
+  list-style-position:outside;
+/*margin-left: 25%;*/
 }

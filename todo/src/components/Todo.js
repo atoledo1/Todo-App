@@ -1,15 +1,15 @@
 import React from 'react';
-
+import {RoughNotation} from "react-rough-notation";
 export default function Todo(props) {
     const { item, id, completed } = props.todo;
     return (
-<div>
-        <wired-checkbox
+<div
+
     onClick={() => props.toggleTask(id)}
-    className={`${completed ? 'completed' : ''}`}
-    >
+    className={`${completed ? 'completed' : ''}`} >
+    <RoughNotation type="crossed-off" show={completed} >
             <li>{item}</li>
-       </wired-checkbox>
+    </RoughNotation>
+
 </div>
-    );
-}
+    )}
