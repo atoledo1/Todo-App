@@ -26,15 +26,10 @@ body {
 
 }
 
-/*.completed {*/
-/*  text-decoration: line-through;*/
-/*  color: #0048ff;*/
-/*}*/
+
 
 h1 {
   font-size: 3rem;
-  /*position: relative;*/
-  /*text-align: center;*/
 
 
 
@@ -44,7 +39,7 @@ h1 {
 
 li {
   font-size: 1.5rem;
-  /*margin: -0.37rem;*/
+
   text-align: left;
 }
 
@@ -59,12 +54,7 @@ button {
 
 }
 
-input {
-  font-size: 1rem;
 
-
-
-}
 .lista{
   margin-top: 20px;
 
@@ -88,5 +78,11 @@ ol {
   
 
   list-style-position:outside;
-/*margin-left: 25%;*/
+
+}
+input{
+  background-color:aliceblue;
+
+
+
 }

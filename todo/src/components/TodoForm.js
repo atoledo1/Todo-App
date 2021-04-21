@@ -8,6 +8,7 @@ export default function AddTodo(props) {
         <div className="add-todo">
 
             <WiredInput className="borde"
+
     type="text"
     name="currentTodo"
     value={props.currentTodo}
