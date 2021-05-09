@@ -7,7 +7,7 @@ export default function Todo(props) {
       onClick={() => props.toggleTask(id)}
       className={`${completed ? "completed" : ""}`}
     >
-      <RoughNotation type="crossed-off" show={completed}>
+      <RoughNotation type="strike-through" show={completed}>
         <li>{item}</li>
       </RoughNotation>
     </div>
