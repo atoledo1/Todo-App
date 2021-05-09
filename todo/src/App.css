@@ -5,27 +5,41 @@
   margin: 0;
 
   font: inherit;
-  font-family:  'Cabin Sketch', cursive;
-  color:#203b47;
-
+  font-family: 'Architects Daughter', cursive;
+  color:#015A38;
 
 }
+
+.background{
+
+  background-color: #fdebf0;
+  background-image: url("https://www.transparenttextures.com/patterns/old-map.png"); 
+ 
+  background-attachment: fixed;
+
+}
+
 
 
 body {
   font-size: 62.5%;
-  background-color: #203b47;
-  color:#203b47;
+  font-weight: 900;
+  
+
+ 
 }
 
 .App {
-  width: 100%;
-  height: 100%;
+ 
   text-align: center;
-
+  width: 100vh;
+  height: 200vh;
 
 }
 
+ 
+ 
+  
 
 
 h1 {
@@ -41,11 +55,15 @@ li {
   font-size: 1.5rem;
 
   text-align: left;
+
 }
 
 .add-todo {
 
-  margin-top:5px ;
+ /* border-style: double;
+ border-radius: 1px; */
+ display: flex;
+ justify-content: space-between;
 }
 
 button {
@@ -57,17 +75,20 @@ button {
 
 .lista{
   margin-top: 20px;
-
+ 
   list-style-position: inside;
 
 }
- wired-card {
-   max-width:500px ;
-   padding: 20px;
+#root > div > div > wired-card {
+   min-width:600px ;
+   width: 800px;
+   padding: 10px;
    text-align: center;
-   font-size: 20px;
+   font-size: 30px;
    line-height: 1.8;
-   margin-top: 100px;
+   margin-top: 10%;
+   margin-left: 55%;
+
 
 
 
@@ -81,8 +102,13 @@ ol {
 
 }
 input{
-  background-color:aliceblue;
+  
+  
+  width: 250px;
+padding-left: 15px;
 
 
-
+}
+input, select, textarea{
+background-color: white;
 }
