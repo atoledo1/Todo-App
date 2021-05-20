@@ -33,11 +33,11 @@ function App() {
 
   return (
     <div className="background" >
-    <div className="App">
+   
       <WiredCard   elevation="5">
-      <RoughNotation type="underline" show={true}>
+      
         <h1>To-Do List</h1>
-</RoughNotation>
+<WiredDivider elevation="2"/>
 <RoughNotation  type="underline" show={true}>
         <AddTodo
           handleChanges={handleChanges}
@@ -52,7 +52,7 @@ function App() {
      
       </WiredCard>
     </div>
-    </div>
+   
   );
 }
 

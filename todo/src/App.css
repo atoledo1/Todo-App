@@ -11,10 +11,12 @@
 }
 
 .background{
+  max-width: 500px;
 
+  margin: auto;
   background-color: #fdebf0;
   background-image: url("https://www.transparenttextures.com/patterns/old-map.png"); 
- 
+  text-align: center;
   background-attachment: fixed;
 
 }
@@ -31,7 +33,7 @@ body {
 
 .App {
  
-  text-align: center;
+ 
   width: 100vh;
   height: 200vh;
 
