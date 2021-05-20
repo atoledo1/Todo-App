@@ -1,114 +1,78 @@
-
-
-
 * {
   margin: 0;
 
-
-  font-family: 'Architects Daughter', cursive;
-  color:#015A38;
-
+  font-family: "Architects Daughter", cursive;
+  color:#D8A7CA;
 }
 
-.background{
+.background {
   text-align: center;
   max-width: 500px;
-  font-family: 'Architects Daughter', cursive;
+  font-family: "Architects Daughter", cursive;
   margin: auto;
-  background-color: #fdebf0;
-  background-image: url("https://www.transparenttextures.com/patterns/old-map.png"); 
+  padding-top: 90px;
  
-  background-attachment: fixed;
-
+  text-align: center;
+  
 }
-
-
 
 body {
   font-size: 62.5%;
   font-weight: 900;
-  
-
- 
 }
-
-
- 
- 
-  
-
 
 h1 {
   font-size: 3rem;
-
-
-
 }
-
-
 
 li {
   font-size: 1.5rem;
 
   text-align: left;
-
 }
 
 .add-todo {
-
- /* border-style: double;
+  /* border-style: double;
  border-radius: 1px; */
- display: flex;
- justify-content: space-between;
-    font-family: 'Architects Daughter', cursive;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Architects Daughter", cursive;
 }
 
 button {
-  font-size: 0.8rem;
-  font-family: 'Architects Daughter', cursive;
-
+  font-family: "Architects Daughter", cursive;
 }
 
-
-.lista{
+.lista {
   margin-top: 20px;
- 
-  list-style-position: inside;
-    font-family: 'Architects Daughter', cursive;
 
+  list-style-position: inside;
+  font-family: "Architects Daughter", cursive;
 }
 #root > div > div > wired-card {
-   min-width:500px ;
-  
-   padding: 10px;
-   text-align: center;
-   font-size: 30px;
-   line-height: 1.8;
-   margin-top: 10%;
-   margin-left: 36%;
-    font-family: 'Architects Daughter', cursive;
+  min-width: 500px;
 
-
-
-
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.8;
+  margin-top: 10%;
+  margin-left: 36%;
+  font-family: "Architects Daughter", cursive;
 }
 
 ol {
-  
-  
-  font-family: 'Architects Daughter', cursive;
-  list-style-position:outside;
-
+  font-family: "Architects Daughter", cursive;
+  list-style-position: outside;
 }
-input{
-  
-    font-family: 'Architects Daughter', cursive;
+input {
+  font-family: "Architects Daughter", cursive;
   width: 250px;
-padding-left: 15px;
-
-
+  padding-left: 15px;
 }
-input, select, textarea{
-background-color: white;
-    font-family: 'Architects Daughter', cursive;
+input,
+select,
+textarea {
+  background-color:#E2EFF3;
+  font-family: "Architects Daughter", cursive;
 }

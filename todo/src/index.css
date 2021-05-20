@@ -2,12 +2,8 @@
 
 
 html{
-  background-color: #011a00;
-background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-}
-
-
+  background-color: #1780a1;
+  background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");}
 
 body {
   margin: 0;
@@ -15,4 +11,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/* 
+background-color: #165496;
+background-image: url("https://www.transparenttextures.com/patterns/gplay.png"); */
