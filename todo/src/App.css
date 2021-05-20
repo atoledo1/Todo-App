@@ -76,8 +76,8 @@ button {
 
 }
 #root > div > div > wired-card {
-   min-width:600px ;
-   width: 800px;
+   min-width:500px ;
+  
    padding: 10px;
    text-align: center;
    font-size: 30px;
