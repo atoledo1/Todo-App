@@ -2,7 +2,7 @@
   margin: 0;
 
   font-family: "Architects Daughter", cursive;
-  color: #015a38;
+  color:#D8A7CA;
 }
 
 .background {
@@ -10,10 +10,10 @@
   max-width: 500px;
   font-family: "Architects Daughter", cursive;
   margin: auto;
-  background-color: #fdebf0;
-  background-image: url("https://www.transparenttextures.com/patterns/old-map.png");
+  padding-top: 90px;
+ 
   text-align: center;
-  background-attachment: fixed;
+  
 }
 
 body {
@@ -73,6 +73,6 @@ input {
 input,
 select,
 textarea {
-  background-color: white;
+  background-color:#E2EFF3;
   font-family: "Architects Daughter", cursive;
 }

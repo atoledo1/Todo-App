@@ -36,7 +36,7 @@ function App() {
  
       <WiredCard   elevation="5">
      
-        <h1>To-Do List</h1>
+        <h1>To-Do </h1>
 <WiredDivider elevation="2"/>
 <RoughNotation  type="underline" show={true}>
         <AddTodo
