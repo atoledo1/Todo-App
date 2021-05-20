@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="background" >
-    <div className="App">
+ 
       <WiredCard   elevation="5">
      
         <h1>To-Do List</h1>
@@ -52,7 +52,7 @@ function App() {
      
       </WiredCard>
     </div>
-    </div>
+   
   );
 }
 
